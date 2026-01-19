@@ -90,14 +90,14 @@ const DashboardPage = () => {
       key: "view",
       icon: <OpenEye />,
       variant: "icon",
-      onClick: () => router.push("/admin/sellers/45"),
+      onClick: () => router.push("/seller/items/45"),
       className: "bg-[#497BC6] text-white",
     },
     {
       key: "view",
       icon: <Edit />,
       variant: "icon",
-      onClick: () => router.push("/admin/sellers/45"),
+      onClick: () => router.push("/seller/items/45"),
       className: "bg-[#4FA662] text-white",
     },
   ];
