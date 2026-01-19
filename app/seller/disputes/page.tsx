@@ -20,12 +20,12 @@ const DisputesModal = () => {
         {
           sender: "system",
           text: "Resolved: We'll update you once we complete delivery verification.",
-          avatar: "/api/placeholder/40/40",
+          avatar: "/images/girl.png",
         },
         {
           sender: "admin",
           text: "We are currently checking the courier details.",
-          avatar: "/api/placeholder/40/40",
+          avatar: "/images/girl.png",
         },
       ],
     },
@@ -60,7 +60,7 @@ const DisputesModal = () => {
             <div className="flex items-center gap-3">
               <div className="w-10 h-10 bg-gray-600 rounded-full overflow-hidden">
                 <Image
-                  src="/api/placeholder/40/40"
+                  src="/images/girl.png"
                   alt="Lena Jankowski"
                   width={50}
                   height={50}
