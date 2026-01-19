@@ -31,7 +31,7 @@ const AuctionMarketplace = () => {
                 {[1, 2, 3, 4, 5].map((i) => (
                   <div
                     key={i}
-                    className="w-12 h-12 bg-gray-100 rounded border-2 border-orange-500"
+                    className="w-12 h-12 bg-gray-100 rounded border-none"
                   >
                     <Image
                       src={"/images/iphone.svg"}
