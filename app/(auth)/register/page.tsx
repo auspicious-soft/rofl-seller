@@ -23,7 +23,7 @@ export default function Home() {
   };
 
   return (
-    <AuthLayout logoClassName="mt-60">
+    <AuthLayout logoClassName="mt-40">
       <form
         className="space-y-5 border border-[#eeeaea] p-5 rounded-3xl"
         onSubmit={handleSubmit}
