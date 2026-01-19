@@ -190,13 +190,15 @@ export default function SideBar({
         />
 
         {/* Sliding panel */}
-        <div
-          className={`absolute inset-y-0 left-0 transform transition-transform ${
-            open ? "translate-x-0" : "-translate-x-full"
-          }`}
-        >
-          <div className="h-full">{sidebarInner(true)}</div>
-        </div>
+        {/* Sliding panel */}
+<div
+  className={`absolute inset-y-0 left-0 transform transition-transform ${
+    open ? "translate-x-0" : "-translate-x-full"
+  }`}
+>
+  <div className="h-130">{sidebarInner(true)}</div>
+</div>
+
       </div>
     </>
   );
