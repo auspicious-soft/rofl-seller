@@ -9,9 +9,18 @@ import Image from "next/image";
 export default function Home() {
   const [showPassword, setShowPassword] = useState(false);
   const router = useRouter();
+
+  const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
+    e.preventDefault();
+    window.location.href = "/seller/dashboard";
+  };
+
   return (
     <AuthLayout logoClassName="mt-60">
-      <form className="space-y-5 border border-[#eeeaea] p-5 rounded-3xl">
+      <form
+        onSubmit={handleSubmit}
+        className="space-y-5 border border-[#eeeaea] p-5 rounded-3xl"
+      >
         {/* Heading */}
         <div className="text-center">
           <h1 className="text-4xl text-center [text-shadow:1px_1px_0px_rgb(0_0_0/1.00)] self-stretch magison text-[#F2482D] drop-shadow-sm">
