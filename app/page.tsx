@@ -2,7 +2,7 @@
 import AuthLayout from "./component/AuthLayout";
 import { Lock, MailOpen, MoveRight } from "lucide-react";
 import { useState } from "react";
-import { ClosedEye, Eye } from "./utils/icons";
+import { ClosedEye, Eye, Google } from "./utils/icons";
 import { useRouter } from "next/navigation";
 import Image from "next/image";
 
@@ -16,7 +16,7 @@ export default function Home() {
   };
 
   return (
-    <AuthLayout logoClassName="mt-60">
+    <AuthLayout logoClassName="mt-50">
       <form
         onSubmit={handleSubmit}
         className="space-y-5 border border-[#eeeaea] p-5 rounded-3xl"
@@ -99,13 +99,7 @@ export default function Home() {
           type="button"
           className="w-full flex items-center justify-center border border-[#E6E6E6] gap-3 rounded-xl py-3 text-sm font-medium text-black bg-[#FFFFFF] transition"
         >
-          <Image
-            src="https://www.svgrepo.com/show/475656/google-color.svg"
-            alt="Google"
-            width={50}
-            height={50}
-            className="w-5 h-5"
-          />
+          <Google/>
           Continue with Google
         </button>
 
